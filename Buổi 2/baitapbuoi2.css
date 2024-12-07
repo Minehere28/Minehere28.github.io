@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin-inline: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.signature{ 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo{ 
+    margin: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    align-items: center;
+    background-color: black;
+}
+.logo  a{
+    text-decoration:none;
+    color:white;
+  }
+.name a{ 
+    text-decoration:none;
+    color:black;
+    display: inline-block;
+    padding-top: 10px ;
+    margin-top: 10px;
+}
+.icon{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    margin-left: 80%;
+    font-size: 24px;
+}
+.introduction{
+    margin-top: 50px;
+  }
+  table{
+    width: 100%;
+  }
+
+.numbervaluelist{
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.numbervaluelist strong {
+    display: block;
+    color:#F26464;
+    font-size: 28px;
+    font-weight: 800;
+}
+.numbervaluelist span{ 
+    font-size: 16px; 
+    letter-spacing: 1px; 
+}
+.numbervaluelist li{ 
+    margin-right: 60px; 
+}
+.numbervaluelist li:last-child{ 
+    margin-right: 0; 
+}
+td.first{
+    width: 40%;
+}
+td.second{
+    width: 50%;
+}
+td.third{
+    width:30%;
+}
+td{
+    vertical-align: top;
+}
+.about_me{
+    margin: 30px;
+}
+.highlight{
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration-color: red;
+    font-weight: bold;
+}
+.text{
+    font-size:18px;
+  }
+  .button{
+    font-size: 15px;
+    display: block;
+    margin: 50px auto;
+    border: 2px solid red;
+    border-radius: 30px;
+    padding: 15px 30px;
+  }
+  button > a{
+    color:red;
+    text-decoration: none;
+  }
+  .skills{
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration-color: red; 
+    padding-bottom: 30px;
+    font-weight: bold;
+  }
+  td.core_skills{
+    width: 50%;
+  }
+  td.other_skills{
+    width: 50%;
+  }
+  .skills__table button{
+    font-size: 10px;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: 6px;
+    padding: 10px 18px;
+  }
+  .work__exprience table{
+    margin-top: 20px;
+    text-decoration-color: red; 
+  }
+  .being_work{
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  .company{
+    font-size: 24px;
+    font-weight: 350;
+    padding-bottom: 10px;
+  }
+  .career{
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+  .work__exprience li{
+    margin-left: 18px;
+    margin-top: 18px;
+  }
