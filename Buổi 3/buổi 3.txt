@@ -1,0 +1,21 @@
+- không nên xài inline trong css
+- float: right đẩy qua phải
+- content-box: đi ra ngoài
+- border-box: đi vào trong
+- object-fit: cover(zoom hình ra), 
+              container(thu nhỏ lại chừa phần trống trắng) thu nhỏ hình lại mà ko biến dạng
+- display:flex = inline-block, 
+- flex box có thể di chuyển về giữa, lên trên/xuống
+- justify-content: điều chỉnh vị trí content (nằm ngang)
+- align-items: điều chỉnh vị trí content (nằm dọc)
+- space-between: đẩy sát ra hai bên dính lề (chỉ có khoảng trắng ở giữa)
+- space-around: có căn chỉnh khoảng trắng cho đều
+- flex-grow:
+- flex-direction column
+- justify-self
+- align-self
+// button
+- border radius
+- padding
+- width, height
+- margin colapse

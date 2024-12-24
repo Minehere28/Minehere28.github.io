@@ -1,0 +1,32 @@
+.body{
+  height:100%;
+  margin: auto;
+  padding:0
+}
+
+.side_bar {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 20%;
+    height: 800px;
+    background-color: pink;
+  }
+
+.header {     
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: calc(100% - 20%);
+      height: 50px;
+      background-color: green;
+    }
+
+.footer{
+  position: fixed;
+  bottom:0;
+  right: 0;
+   width:calc(100% - 20%) ;
+   height: 150px ;
+  background-color: blue;
+}

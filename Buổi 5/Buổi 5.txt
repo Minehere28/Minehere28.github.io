@@ -1,0 +1,22 @@
+- position:relative: Thiết lập các thuộc tính top, right, bottom và left 
+của một phần tử có vị trí tương đối sẽ khiến nó được điều chỉnh ra khỏi vị trí bình thường. 
+Nội dung khác sẽ không được điều chỉnh để vừa với bất kỳ khoảng trống nào do phần tử để lại.
+- position:absolute: Loại bỏ phần tử khỏi luồng tài liệu, sau đó định vị phần tử so với phần tử 
+cha gần nhất có thuộc tính position (không phải static).
+Nếu không có cha nào được định vị, nó sẽ bám theo khung nhìn của tài liệu (document body).
+- position:fixed: Đặt phần tử tại một vị trí cố định so với khung nhìn của trình duyệt (viewport). 
+Nó không di chuyển khi cuộn trang.Thường dùng để tạo header/footer cố định.
+- position:sticky: Kết hợp giữa relative và fixed. Phần tử ban đầu di chuyển theo luồng tài liệu (relative), 
+nhưng khi cuộn đến một vị trí nhất định, nó "dính" lại (sticky) so với tổ tiên chứa nó.
+Yêu cầu xác định giá trị top, left, right, hoặc bottom.  
+- pseudo:before:Là pseudo-element, được sử dụng để chèn nội dung vào trước nội dung thực tế của một phần tử.
+- pseudo:after:chèn nội dung sau nội dung thực tế của phần tử
+- pseudo:hover:Là pseudo-class, kích hoạt khi con trỏ chuột trỏ vào phần tử.
+Thường dùng để thay đổi màu, hiển thị hiệu ứng hoặc bật menu.
+- pseudo:active:Là pseudo-class, kích hoạt khi người dùng nhấn giữ chuột trên phần tử (như khi click vào một nút hoặc liên kết).
+Dùng để tạo hiệu ứng nhấn.
+- pseudo:visited:Là pseudo-class, áp dụng cho các liên kết đã được truy cập (visited).
+Dùng để thay đổi giao diện các liên kết đã nhấp.
+- pseudo:nth-child:Là pseudo-class, chọn phần tử con thứ n (hoặc phù hợp với công thức an+b) của một phần tử cha.
+Có thể dùng để chọn các phần tử theo thứ tự chẵn, lẻ, hoặc khoảng cách cụ thể.
+ 

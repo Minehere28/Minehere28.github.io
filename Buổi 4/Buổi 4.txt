@@ -1,0 +1,4 @@
+- flex 1 box: giãn ra vô hạn
+- flex 1 cả 3 box: thì sẽ chia 3, grow 1
+- box-sizing: width, height
+- 
