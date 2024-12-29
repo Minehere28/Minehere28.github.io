@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.parent{
+    background-color: pink;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items:flex-end ;
+    border: 2px solid black;
+
+}
+
+.child{
+    background-color: green;
+    height: 1%;
+    width: 100%;
+    transition: height 2s;
+}
+
+
+.parent:hover>.child{
+ height: 100%;
+}
+
+.child:hover{
+    background-color: orange;
+}

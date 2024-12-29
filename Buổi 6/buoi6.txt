@@ -1,0 +1,10 @@
+- transform: translateX(100px): dịch qua phải
+- transform: rotate(90deg): xoay 90 độ
+- transform:scale: tăng lên
+- opacity: sáng hơn
+- animation, keyframe
+- overflow: hidden : tràn ra bị ẩn đi,..
+- border-radius: 99999px (tròn)
+- input: outline
+- position: relative;
+- position: absolute;

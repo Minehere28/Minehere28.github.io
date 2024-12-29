@@ -1,0 +1,586 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body {
+    background: #2f3238;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline: 16px;
+.left{
+    color: blue;
+    font-size: 16px;
+    margin-left: 15px;
+    margin-top: 5px;
+    align-items: flex-start;
+}
+.right{
+    color: blue;
+    font-size: 16px;
+    margin-right: 15px;
+    margin-top: 5px;
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+}
+}
+.introduction{
+    justify-content: space-between;
+    font-size: 28px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.content {
+    margin-top: 80px;
+    display: flex;
+    gap: 40px;
+    position: relative;
+	float: left;
+}
+.content > h2 {
+    display: flex;
+	color: #484B54;
+	font-weight: 800;
+	font-size: 1.5em;
+}
+/* LILY */
+.lily {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.lily img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.lily:hover img {
+    transform: translateX(30px);
+    opacity: 1;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.text-overlay .title_lily {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+}
+
+.text-overlay .title_lily span {
+    color: white;
+}
+
+.text-overlay .subtitle_lily {
+    display: block;
+    font-size: 16px;
+    opacity: 0.8;
+    text-transform: none;
+    transform: translateY(20px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+}
+
+.lily:hover .text-overlay .title_lily {
+    transform: translateY(-20px);
+}
+
+.lily:hover .text-overlay .subtitle_lily {
+    transform: translateY(0);
+    opacity: 1;
+}
+/* SADIE */
+.sadie{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    display: inline-block; 
+    opacity: 1;
+}
+.sadie img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: absolute;
+    opacity:1;
+}
+
+.sadie:hover img {
+    opacity: 0.75;
+}
+
+.text-overlay-sadie {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: center;
+    padding: 20px;
+    transition: opacity 0.5s ease;
+    color: white;
+    z-index: 1;
+}
+
+.text-overlay-sadie .title_sadie {
+    font-size: 30px;
+    display: flex;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 2px;
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+    
+}
+
+.text-overlay-sadie .title_sadie span {
+    color: white;
+}
+
+.text-overlay-sadie .subtitle_sadie {
+    font-size: 16px;
+    opacity: 0.8;
+    transform: translateY(10px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    margin:0;
+    display: flex;
+    bottom: 0;
+    text-align: center;
+}
+
+.sadie:hover .text-overlay-sadie .title_sadie {
+    opacity: 0.8;
+    margin: 0;
+    transform: translateY(-20px); 
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    text-align: center;
+}
+
+.sadie:hover .text-overlay-sadie .subtitle_sadie {
+    transform: translateY(0); 
+    opacity: 1;/* Hiện văn bản phụ khi hover */
+    bottom: 0;
+}
+
+/*HONEY---*/
+.honey{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    display: inline-block; 
+}
+.honey img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: absolute;
+    opacity:1;
+}
+
+.honey:hover img {
+    opacity: 0.5;
+}
+
+.text-overlay-honey {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: flex-start;
+    transition: opacity 0.5s ease;
+    color: white;
+    z-index: 1;
+}
+
+.text-overlay-honey .title_honey {
+    display: flex;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+    
+}
+
+.text-overlay-honey .title_honey span {
+    color: white;
+}
+
+.text-overlay-honey .subtitle_honey {
+    display: flex;
+    font-size: 30px;
+    opacity: 0.8;
+    transform: translateY(-10px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    margin-bottom: 25px;
+    display: flex;
+    bottom: 0;
+    text-align: center;
+}
+
+.honey:hover .text-overlay-honey .title_honey {
+    opacity: 0.8;
+    transform: translateY(10px); 
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    text-align: center;
+}
+
+.honey:hover .text-overlay-honey .subtitle_honey {
+    transform: translateY(0); 
+    opacity: 1;/* Hiện văn bản phụ khi hover */
+    bottom: 0;
+}
+.white-line {
+    height: 30px; /* Chiều cao vạch */
+    background: white; /* Màu trắng */
+    width: calc(100%); /* Kéo dài hết chiều rộng */
+    position: absolute;
+    bottom: 0;
+    opacity:0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.honey:hover .white-line{
+    opacity: 1;
+    transform: translateY(0); 
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+/* JULIA */
+.julia{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    display: inline-block; 
+}
+.julia img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: absolute;
+    opacity:1;
+}
+
+.julia:hover img {
+    opacity: 0.75;
+    transform: scale(1.1);
+}
+
+.text-overlay-julia {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    padding: 20px;
+    transition: opacity 0.5s ease;
+    color: white;
+    z-index: 1;
+}
+
+.text-overlay-julia .title_julia {
+    display: flex;
+    font-size: 30px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+    letter-spacing: 2px;
+    transform: translateY(0);
+    transition: transform 0.5s ease;
+    
+}
+
+.text-overlay-julia .title_julia span {
+    color: white;
+}
+
+.text-overlay-julia .subtitle_julia {
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0.8;
+    bottom: 0;
+    text-align: center;
+}
+
+.julia:hover .text-overlay-julia .title_julia {
+    opacity: 0.8;
+    margin: 0;
+    text-align: center;
+}
+.animation-lines {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.line {
+    background: white;
+    color: #333;
+    padding: 8px;
+    font-size: 14px;
+    gap: 10px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Hover effect for lines */
+.julia:hover .line:nth-child(1) {
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.julia:hover .line:nth-child(2) {
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+
+.julia:hover .line:nth-child(3) {
+    transform: translateX(0);
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+/* steve */
+.steve{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    display: inline-block; 
+    cursor: pointer;
+}
+.steve img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+    opacity:1;
+    display: block;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.steve:hover img {
+    overflow: hidden;
+    transform: scale3d(1.3, 1.3, 1.3);
+}
+
+.text-overlay-steve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items:center;
+    transition: opacity 0.5s ease;
+    color: black;
+    z-index: 1;
+}
+
+.text-overlay-steve .title_steve {
+    display: flex;
+    font-size: 30px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    background: white;
+    width: 300px;
+    height: 40px;
+    justify-content: center;
+}
+
+.text-overlay-steve .title_steve span {
+    font-weight: bold;
+    color: white;
+}
+
+.text-overlay-steve .subtitle_steve {
+    display: flex;
+    font-size: 30px;
+    font-weight: 300px;
+    bottom: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.animation-lines {
+    display: flex;
+    flex-direction: column;
+}
+.line {
+    margin-bottom: 50px;
+    background: white;
+    width: 300px;
+    height: 25px;
+    justify-content: center;
+    color: black;
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.steve:hover .line {
+    transform:scale3d(1.3, 1.3, 1.3);
+    transform: translateX(0); /* Đưa dòng chữ vào vị trí gốc */
+    opacity: 1; /* Hiển thị dòng chữ */
+}
+
+/* SELENA */
+.selena{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    display: inline-block; 
+}
+.selena img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: absolute;
+    opacity:1;
+}
+
+.selena:hover img {
+    transform: scale(0.95);
+    border: 10px solid white;
+}
+
+.text-overlay-selena {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 20px;
+    transition: opacity 0.5s ease;
+    color: white;
+    z-index: 1;
+}
+
+.text-overlay-selena .title_selena {
+    display: flex;
+    font-size: 30px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    
+}
+
+.text-overlay-selena .title_selena span {
+    color: white;
+    font-weight: bold;
+}
+
+.text-overlay-selena .subtitle_selena {
+    display: flex;
+    font-size: 12px;
+    font-weight: 200px;
+    opacity: 0.8;
+    transform: translateY(-15px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    display: flex;
+    text-align: center;
+}
+
+.selena:hover .text-overlay-selena .title_selena {
+    opacity: 0.8;
+    transform: translateY(-5px); 
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    text-align: center;
+}
+
+.selena:hover .text-overlay-selena .subtitle_selena {
+    transform: translateY(0); 
+    opacity: 1;/* Hiện văn bản phụ khi hover */
+    bottom: 0;
+}
