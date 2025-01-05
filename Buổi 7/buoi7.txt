@@ -1,0 +1,13 @@
+JavaScript
+- == thì so sánh bth
+- === thì so sánh luôn cả dạng kiểu (chuỗi) ,...
+- for đổi thành let
+- let arr =[1, 'abc', true]
+- arr[10]: undefine
+- let a //undefine
+- let b=null (gtri rỗng)
+- for (let value of arr)
+console.log("value: ", value)
+- for (let i in arr)
+console.log("value i= ", i)
+- không nên xài var, chỉ tính let const
