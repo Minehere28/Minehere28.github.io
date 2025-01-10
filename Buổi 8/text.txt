@@ -1,0 +1,4 @@
+gitlab, route
+../ vượt cấp
+breakpoint, tailwindcss
+minw nên dùng với desktop first
