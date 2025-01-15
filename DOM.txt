@@ -1,0 +1,10 @@
+- Sử dụng: document.querySelector(selector) (tìm phần tử đầu tiên) hoặc document.querySelectorAll(selector) (tìm tất cả).
+- Truy cập theo ID:
+
+Sử dụng: document.getElementById(id)
+- Truy cập theo class:
+
+Sử dụng: document.getElementsByClassName(className)
+- Truy cập theo thẻ:
+
+Sử dụng: document.getElementsByTagName(tagName)

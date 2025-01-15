@@ -1,0 +1,32 @@
+// CALL BACK
+- truyền function dưới dạng 1 đối số
+// FOR EACH 
+- lọc ra từng phần tử trong mảng
+//MAP 
+- tạo ra array mới từ array cũ
+// FIND / FIND INDEX
+- tìm phần tử 
+// REDUCE
+- hàm phải return, nếu ko sẽ undefined
+- function , nhận call back và giá trị khởi đầu
+const arr = [ 'a', 'b,'c']
+const result = arr.reduce 
+    function (callback, curreny value, currentIndex, arr
+    if 
+)
+
+// ARRAY.PROTOTYPE
+
+
+//setTimeout (thời gian chờ) (function()){
+    console.log
+}
+
+
+//setInterval
+
+// JS event loop (tra gg)
+// SYNC ASYNC, array.filter (lọc tìm nhiều cái)
+
+function getImageUrl, hình, tên, id
+dùng array để 
