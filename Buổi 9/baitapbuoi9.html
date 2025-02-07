@@ -153,7 +153,7 @@
             }
         }
 
-        @media (max-width: 480px) {
+        /*@media (max-width: 480px) {
             .container {
                 grid-template-columns: 1fr;
                 grid-template-rows: repeat(6, auto);
@@ -162,20 +162,40 @@
             .schedule, .speakers{
                 grid-column: span 4;
             }
-            .tickets{
-                grid-column: span 3;
-            }
-             .sponsors, .home,.purple, .venue, .close {
-                grid-column: span 1;
+             .sponsors, .home,.purple, .venue, .close, .tickets {
+                grid-column: span 2;
             }
 
             .yellow {
                 display: none;
             }
             .red{
-                grid-column: span 2;
+                grid-column: span 1;
             }
-        }
+        }*/
+        @media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr 1fr; /* 2 cột để tối ưu không gian */
+        grid-template-rows: repeat(5, auto);
+    }
+
+    .schedule, 
+    .speakers, 
+    .sponsors {
+        grid-column: span 2; /* Chiếm toàn bộ hàng */
+    }
+
+    .tickets, 
+    .venue, 
+    .home, 
+    .close, 
+    .purple, 
+    .yellow, 
+    .red {
+        grid-column: span 1; /* Mỗi phần tử chiếm 1 cột */
+    }
+}
+
     </style>
 </head>
 <body>
